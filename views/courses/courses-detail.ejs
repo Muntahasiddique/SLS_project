@@ -1,0 +1,23 @@
+<%- include('../includes/head', { pageTitle: "Course Details" }) %>
+<link rel="stylesheet" href="/styles/courses.css">
+</head>
+<body>
+    <%- include('../includes/header' ) %>
+
+    <main class="course-detail-container">
+        <h1>Introduction to Python</h1>
+        <img src="/images/course1.jpg" alt="Python Course">
+        <p>Learn Python with interactive lessons and projects.</p>
+
+        <div class="course-meta">
+            <span><strong>Instructor:</strong> John Doe</span>
+            <span><strong>Duration:</strong> 10 Hours</span>
+            <span><strong>Level:</strong> Beginner</span>
+        </div>
+
+        <a href="/enroll" class="btn">Enroll Now</a>
+    </main>
+
+    <%- include('../includes/footer') %>
+</body>
+</html>

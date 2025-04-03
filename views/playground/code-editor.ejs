@@ -1,0 +1,40 @@
+<%- include('../includes/head', { pageTitle: "Code Playground" }) %>
+<link rel="stylesheet" href="/styles/playground.css">
+</head>
+<body>
+    <%- include('../includes/header') %>
+
+    <main class="playground-container">
+        <h1>Code Playground</h1>
+        <p>Write and run your code in different programming languages.</p>
+
+        <!-- Language Selection -->
+        <div class="playground-controls">
+            <label for="language">Select Language:</label>
+            <select id="language">
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="cpp">C++</option>
+            </select>
+            <button id="run-code" class="btn">Run Code</button>
+        </div>
+
+        <!-- Code Editor -->
+        <div class="editor-container">
+            <textarea id="code-editor" placeholder="Write your code here..."></textarea>
+        </div>
+
+        <!-- Output Section -->
+        <div class="output-container">
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+    </main>
+
+    <%- include('../includes/footer') %>
+
+    <script src="/scripts/playground.js"></script>
+</body>
+</html>

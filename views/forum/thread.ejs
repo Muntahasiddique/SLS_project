@@ -1,0 +1,34 @@
+<%- include('../includes/head', { pageTitle: "Thread Discussion" }) %>
+<link rel="stylesheet" href="/styles/forum.css">
+</head>
+<body>
+    <%- include('../includes/header') %>
+
+    <main class="thread-container">
+        <h1>How to Learn JavaScript Fast?</h1>
+        <p class="thread-meta">Posted by JohnDoe | 10 Replies | <span class="upvotes">15 Upvotes</span></p>
+
+        <div class="thread-content">
+            <p>JavaScript is a powerful language for web development. What are the best resources to learn it quickly?</p>
+        </div>
+
+        <h2>Replies</h2>
+        <div class="replies">
+            <div class="reply">
+                <p><strong>JaneDoe:</strong> I recommend "You Don't Know JS" book series!</p>
+            </div>
+            <div class="reply">
+                <p><strong>Alex:</strong> FreeCodeCamp and MDN Docs are excellent places to start.</p>
+            </div>
+        </div>
+
+        <!-- Reply Form -->
+        <form class="reply-form" action="#" method="POST">
+            <textarea name="reply" placeholder="Write your reply..." required></textarea>
+            <button type="submit" class="btn">Post Reply</button>
+        </form>
+    </main>
+
+    <%- include('../includes/footer') %>
+</body>
+</html>

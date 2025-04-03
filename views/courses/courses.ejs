@@ -1,0 +1,48 @@
+<%- include('../includes/head', { pageTitle: "Courses" }) %>
+<link rel="stylesheet" href="/styles/courses.css">
+</head>
+<body>
+    <%- include('../includes/header' ) %>
+
+    <main class="courses-container">
+        <h1>Browse Courses</h1>
+
+        <!-- Filters -->
+        <div class="filters">
+            <input type="text" placeholder="Search Courses..." id="searchBox">
+            <select id="categoryFilter">
+                <option value="">All Categories</option>
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+            </select>
+        </div>
+
+        <!-- Course Cards -->
+        <div class="course-list">
+            <div class="course-card">
+                <img src="/images/course1.jpg" alt="Course 1">
+                <h3>Introduction to Python</h3>
+                <p>Learn Python from scratch with hands-on projects.</p>
+                <a href="/courses/details" class="btn">View Details</a>
+            </div>
+
+            <div class="course-card">
+                <img src="/images/course2.jpg" alt="Course 2">
+                <h3>Web Development Bootcamp</h3>
+                <p>Master HTML, CSS, and JavaScript with real-world projects.</p>
+                <a href="/courses/details" class="btn">View Details</a>
+            </div>
+
+            <div class="course-card">
+                <img src="/images/course3.jpg" alt="Course 3">
+                <h3>Machine Learning Basics</h3>
+                <p>Explore AI and ML with Python and Jupyter Notebook.</p>
+                <a href="/courses/details" class="btn">View Details</a>
+            </div>
+        </div>
+    </main>
+
+    <%- include('../includes/footer') %>
+</body>
+</html>

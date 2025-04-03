@@ -1,0 +1,23 @@
+<%- include('../includes/head', { pageTitle: "Course Progress" }) %>
+<link rel="stylesheet" href="/styles/courses.css">
+</head>
+<body>
+    <%- include('../includes/header' ) %>
+
+    <main class="progress-container">
+        <h1>Course Progress</h1>
+
+        <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+        </div>
+        
+        <h2>Completed Lessons</h2>
+        <ul>
+            <li>Lesson 1: Introduction to Python</li>
+            <li>Lesson 2: Variables & Data Types</li>
+        </ul>
+    </main>
+
+    <%- include('../includes/footer') %>
+</body>
+</html>

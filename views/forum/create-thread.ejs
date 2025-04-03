@@ -1,0 +1,30 @@
+<%- include('../includes/head', { pageTitle: "Create Thread" }) %>
+<link rel="stylesheet" href="/styles/forum.css">
+</head>
+<body>
+    <%- include('../includes/header') %>
+
+    <main class="create-thread-container">
+        <h1>Create a New Discussion Thread</h1>
+
+        <form action="#" method="POST">
+            <label>Thread Title</label>
+            <input type="text" name="title" required>
+
+            <label>Category</label>
+            <select name="category">
+                <option value="programming">Programming</option>
+                <option value="design">Design</option>
+                <option value="business">Business</option>
+            </select>
+
+            <label>Thread Content</label>
+            <textarea name="content" required></textarea>
+
+            <button type="submit" class="btn">Create Thread</button>
+        </form>
+    </main>
+
+    <%- include('../includes/footer') %>
+</body>
+</html>
